@@ -1,7 +1,7 @@
 .app {
   max-width: 1200px;
-  width: 50%;
-  margin: 100px auto;
+  width: 100%;
+  margin: auto;
   box-shadow: 0 0 5px #ccc;
 }
 .details {
@@ -100,7 +100,9 @@
   padding: 10px 25px;
   margin-top: 15px;
 }
-
+.box {
+  margin: 20px;
+}
 @media (max-width: 750px) {
   .thumb {
     height: 50px;
