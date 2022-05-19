@@ -6,6 +6,7 @@ import DetailsThumb from "./components/DetailsThumb";
 
 class App extends React.Component {
   state = {
+    disable: true,
     products: [
       {
         _id: "1",
@@ -47,6 +48,7 @@ class App extends React.Component {
   handleTab = (index) => {
     this.setState({ index: index });
     const images = this.myRef.current.children;
+
     for (let i = 0; i < images.length; i++) {
       images[i].className = images[i].className.replace("active", "");
     }
@@ -56,6 +58,7 @@ class App extends React.Component {
   componentDidMount() {
     const { index } = this.state;
     this.myRef.current.children[index].className = "active";
+    this.state.disable = false;
   }
 
   render() {
@@ -103,6 +106,7 @@ class App extends React.Component {
                 <button
                   className="buy-button"
                   onClick={() => alert("Implement checkout")}
+                  disabled={this.state.disable}
                 >
                   <h1>Buy</h1>
                 </button>
