@@ -11,9 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-h3 {
-  color: rgb(128, 128, 128);
+h1 {
+  color: rgb(19, 128, 88);
+  font-weight: normal;
 }
 h2 {
   color: rgb(128, 128, 128);
+}
+h3 {
+  color: rgb(128, 128, 128);
+  font-weight: normal;
 }

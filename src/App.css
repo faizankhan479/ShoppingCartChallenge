@@ -35,8 +35,7 @@
   margin-bottom: 15px;
 }
 .box .row h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 .box .row span {
   color: crimson;
@@ -59,7 +58,6 @@
   margin: 15px 0;
 }
 .buy-button {
-  /* text-align: center; */
   align-content: center;
   padding: 10px 25px;
   width: 100%;

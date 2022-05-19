@@ -26,8 +26,8 @@ class App extends React.Component {
           "2017",
           "Item unavailable for blue",
         ],
-        specification: ["", "", "4 X 4", ""],
-        price: ["", "", "£24500", ""],
+        specification: ["", "", "4X4", ""],
+        price: ["", "", "£ 24,500", ""],
         petrolspecification: ["", "", "3.0L Diesel 258HP", ""],
         colors: ["black", "red", "white", "blue"],
         count: 1,
@@ -59,7 +59,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="row">
-          <h2> Your Selection</h2>
+          <h2> Your selection</h2>
         </div>
 
         {products.map((item) => (
@@ -78,17 +78,14 @@ class App extends React.Component {
                 {item.specification[index]}
                 <br />
                 {item.petrolspecification[index]}
-                <br />
               </h3>
-
-              <h2>
-                <br />
-                OTR Price
-                <br />
-                {item.price[index]}
-              </h2>
               <br />
-
+              <br />
+              <h2>OTR Price</h2>
+              <br />
+              <br />
+              <h1>{item.price[index]}</h1>
+              <br />
               <DetailsThumb
                 images={item.src}
                 colors={item.colors}
@@ -101,7 +98,7 @@ class App extends React.Component {
                   onClick={() => alert("Implement checkout")}
                   disabled={this.state.disable}
                 >
-                  <h1>Buy</h1>
+                  <h2>Buy</h2>
                 </button>
               </div>
             </div>
