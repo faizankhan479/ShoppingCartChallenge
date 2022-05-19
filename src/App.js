@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-
-// import Colors from "./components/Colors";
 import DetailsThumb from "./components/DetailsThumb";
 
 class App extends React.Component {
@@ -28,14 +26,9 @@ class App extends React.Component {
           "2017",
           "Item unavailable for blue",
         ],
-        specification: ["    ", "", "4 X 4", ""],
-        price: ["            ", "          ", "£24500", "        "],
-        petrolspecification: [
-          "           ",
-          "           ",
-          "3.0L Diesel 258HP",
-          "           ",
-        ],
+        specification: ["", "", "4 X 4", ""],
+        price: ["", "", "£24500", ""],
+        petrolspecification: ["", "", "3.0L Diesel 258HP", ""],
         colors: ["black", "red", "white", "blue"],
         count: 1,
       },
